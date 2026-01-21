@@ -10,7 +10,7 @@ class Lazykafka < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/dubel/lazykafka-dist/releases/download/v0.0.1/lazykafka_0.0.1_darwin_amd64.tar.gz"
-      sha256 "c5ce9e004c2e87a78b91e52ed68f0e5940961e26a7d34b0f95f5ac2f675aee5b"
+      sha256 "644a0d1a9dfb55ee1f303f8675086be0994e19b888b35f0167efeeed35c0c768"
 
       def install
         bin.install "lazykafka"
@@ -18,7 +18,7 @@ class Lazykafka < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/dubel/lazykafka-dist/releases/download/v0.0.1/lazykafka_0.0.1_darwin_arm64.tar.gz"
-      sha256 "0794c0d7cb8ec828e42f47641045095db6775657e4f4bb2e9db41b2731d6d845"
+      sha256 "5c33e0458e6cbe44bf98a5f27657c3bcf529bf9822cde2b77a56dbd49b00511c"
 
       def install
         bin.install "lazykafka"
@@ -29,14 +29,14 @@ class Lazykafka < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/dubel/lazykafka-dist/releases/download/v0.0.1/lazykafka_0.0.1_linux_amd64.tar.gz"
-      sha256 "1bb091c4f97fdbdef677848da496debc37f12ab7e8a4c652698cab0e2fcc567e"
+      sha256 "d4de45bb62b57222d368714266db0ec60cf4af40ebfbdf298c851fae97c32e93"
       def install
         bin.install "lazykafka"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/dubel/lazykafka-dist/releases/download/v0.0.1/lazykafka_0.0.1_linux_arm64.tar.gz"
-      sha256 "ceaf65a3ff4e6f15e9e4c0c1ad7a9a08395e81c2ec74080c93f15cffcd62cad7"
+      sha256 "ba83a2ffe8a8b905d2753a8bd2f86621d914e24e097d863a8f6bc3cdfec5a271"
       def install
         bin.install "lazykafka"
       end
