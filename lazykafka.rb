@@ -5,20 +5,20 @@
 class Lazykafka < Formula
   desc "Relaxed Kafka TUI for browsing and managing clusters."
   homepage "https://github.com/dubel/lazykafka-dist"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dubel/lazykafka-dist/releases/download/v0.0.1/lazykafka_0.0.1_darwin_amd64.tar.gz"
-      sha256 "644a0d1a9dfb55ee1f303f8675086be0994e19b888b35f0167efeeed35c0c768"
+      url "https://github.com/dubel/lazykafka-dist/releases/download/v0.0.2/lazykafka_0.0.2_darwin_amd64.tar.gz"
+      sha256 "76f3dd2cee52f687a954b14ce45c2ce73a8e8848ffb07e64700cbc1949a1219e"
 
       def install
         bin.install "lazykafka"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dubel/lazykafka-dist/releases/download/v0.0.1/lazykafka_0.0.1_darwin_arm64.tar.gz"
-      sha256 "5c33e0458e6cbe44bf98a5f27657c3bcf529bf9822cde2b77a56dbd49b00511c"
+      url "https://github.com/dubel/lazykafka-dist/releases/download/v0.0.2/lazykafka_0.0.2_darwin_arm64.tar.gz"
+      sha256 "485b370dacdb6bba0544adea51cf3bcfe5a7b787ebbcd44f993e6030ffc359c0"
 
       def install
         bin.install "lazykafka"
@@ -28,15 +28,15 @@ class Lazykafka < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dubel/lazykafka-dist/releases/download/v0.0.1/lazykafka_0.0.1_linux_amd64.tar.gz"
-      sha256 "d4de45bb62b57222d368714266db0ec60cf4af40ebfbdf298c851fae97c32e93"
+      url "https://github.com/dubel/lazykafka-dist/releases/download/v0.0.2/lazykafka_0.0.2_linux_amd64.tar.gz"
+      sha256 "870d76e10a60426e6bd676e94bfc6eb993d5d0dbad4a48bde879826bef2fc711"
       def install
         bin.install "lazykafka"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dubel/lazykafka-dist/releases/download/v0.0.1/lazykafka_0.0.1_linux_arm64.tar.gz"
-      sha256 "ba83a2ffe8a8b905d2753a8bd2f86621d914e24e097d863a8f6bc3cdfec5a271"
+      url "https://github.com/dubel/lazykafka-dist/releases/download/v0.0.2/lazykafka_0.0.2_linux_arm64.tar.gz"
+      sha256 "ca0f120a7e763676a6cb3bc81f42b5c6decec18ca1b51c0ec273569b4e3f1d17"
       def install
         bin.install "lazykafka"
       end
